@@ -5,12 +5,9 @@ import CourseApp from "./pages/CourseApp";
 import CourseList from '/src/pages/CourseList';
 import API from '/src/pages/API';
 import Login from '/src/pages/Login';
-
-import WelcomePage from '/src/pages/WelcomePage.jsx';
 import { RegistrationForm } from "./components/Register";  // Import RegistrationForm
 import NavBar from "./components/NavBar"
 import WelcomePage from './pages/WelcomePage';
-
 
 
 export default function App() {

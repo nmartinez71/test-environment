@@ -7,7 +7,7 @@ import API from '/src/pages/API';
 import Login from '/src/pages/Login';
 import { RegistrationForm } from "./components/Register";  // Import RegistrationForm
 import NavBar from "./components/NavBar"
-import WelcomePage from './pages/WelcomePage';
+import Home from './pages/Home';
 
 
 export default function App() {

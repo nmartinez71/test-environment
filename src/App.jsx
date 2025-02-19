@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/" element={<Login />} />
         <Route path="/course" element={<CourseApp />} />
         <Route path="/api" element={<API />} />
+        <Route path="/" element={<CourseList />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       </div>

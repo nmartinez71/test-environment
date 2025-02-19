@@ -36,20 +36,31 @@ function NavBar() {
               </li>
 
               {/* Additional Links */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/course">Courses</Link>
+              </li> */}
+
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Classes & Registration
+                </Link>
+                <ul className="dropdown-menu dropdown-menu-start"> {/* Aligned to the left */}
+                  <li><Link className="dropdown-item" to="/courselist">Course List</Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><Link className="dropdown-item" to="/registration">Register for Classes</Link></li>
+                </ul>
               </li>
+
               
               {/* Dropdown Menu */}
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Configurations
+                  Admin Settings
                 </Link>
                 <ul className="dropdown-menu dropdown-menu-start"> {/* Aligned to the left */}
-                  <li><Link className="dropdown-item" to="/api">API Testing</Link></li>
-                  <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                  <li><Link className="dropdown-item" to="/course">Add Classes</Link></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                  <li><Link className="dropdown-item" to="/api">API Testing</Link></li>
                 </ul>
               </li>
             </ul>

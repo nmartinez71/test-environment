@@ -12,7 +12,7 @@ function CourseList() {
 
   const fetchSongs = async () => {
     try {
-      const response = await fetch("https://rumbling-backend.glitch.me/api/songs");
+      const response = await fetch("https://equinox-backend.glitch.me/api/songs");
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }

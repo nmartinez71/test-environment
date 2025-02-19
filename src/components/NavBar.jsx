@@ -32,7 +32,7 @@ function NavBar() {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               {/* Home Link */}
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home">Login</Link>
+                <Link className="nav-link active" aria-current="page" to="*">Home</Link>
               </li>
 
               <li className="nav-item">

@@ -17,11 +17,11 @@ export default function App() {
       <div className="container mt-5 pt-5">
       <Routes>
         <Route path="/register" element={<RegistrationForm />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/course" element={<CourseApp />} />
         <Route path="/api" element={<API />} />
         <Route path="/courselist" element={<CourseList />} />
-        <Route path="*" element={<WelcomePage />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
       </div>
     </BrowserRouter>

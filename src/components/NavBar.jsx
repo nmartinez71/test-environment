@@ -31,9 +31,9 @@ function NavBar() {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               {/* Home Link */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">Login</Link>
-              </li>
+              </li> */}
 
               {/* Additional Links */}
               {/* <li className="nav-item">

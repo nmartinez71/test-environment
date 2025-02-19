@@ -6,9 +6,10 @@ import CourseList from '/src/pages/CourseList';
 import API from '/src/pages/API';
 import Login from '/src/pages/Login';
 
-import NotFound from '/src/pages/NotFound.jsx';
+import WelcomePage from '/src/pages/WelcomePage.jsx';
 import { RegistrationForm } from "./components/Register";  // Import RegistrationForm
 import NavBar from "./components/NavBar"
+import WelcomePage from './pages/WelcomePage';
 
 
 
@@ -23,7 +24,7 @@ export default function App() {
         <Route path="/course" element={<CourseApp />} />
         <Route path="/api" element={<API />} />
         <Route path="/courselist" element={<CourseList />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<WelcomePage />} />
       </Routes>
       </div>
     </BrowserRouter>

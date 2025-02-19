@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Input  from "../ui/Input";
 
-function API() {
+function CourseList() {
   const [songs, setSongs] = useState([]);  // Ensure no duplicate 'songs' variable
+  const [search, setSearch] = useState("");
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -11,7 +12,7 @@ function API() {
 
   const fetchSongs = async () => {
     try {
-      const response = await fetch("https://equinox-climbing-handbell.glitch.me/api/songs");
+      const response = await fetch("https://rumbling-backend.glitch.me/api/songs");
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -24,10 +25,8 @@ function API() {
 
   return (
     <div>
-
-    {/* Search Bar */}
-    <Input className="search-input" placeholder="Search for Course" value={search} onChange={(e) => setSearch(e.target.value)} />
-
+      {/* Search Bar */}
+      <Input className="search-input" placeholder="Search for Course" value={search} onChange={(e) => setSearch(e.target.value)} />
 
       <h1>Songs List</h1>
       {error && <p>Error: {error}</p>}  
@@ -46,4 +45,4 @@ function API() {
   );
 }
 
-export default API;
+export default CourseList;

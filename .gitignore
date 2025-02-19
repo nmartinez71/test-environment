@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 #Took out the vite config.js as it does not need to be updated any longer
+vite.config.js

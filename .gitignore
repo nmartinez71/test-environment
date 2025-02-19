@@ -128,6 +128,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-#Took out the vite config.js as it does not need to be updated any longer
-vite.config.js

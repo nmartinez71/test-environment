@@ -5,7 +5,7 @@ import Button  from "../ui/Button";
 import { Card } from "../ui/Card";
 import "../styles.css";
 
-function RegistrationForm({ onClose }) {
+function RegistrationForm() {
   const [inputs, setInputs] = useState({
     username: "",
     email: "",
@@ -53,4 +53,5 @@ function RegistrationForm({ onClose }) {
   );
 }
 
-export { RegistrationForm };
+export default RegistrationForm;
+

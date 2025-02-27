@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../styles.css';
 
 function NavBar() {
   return (
-    <nav className="navbar bg-body-tertiary fixed-top">
+    <nav className="navbar bg-body-tertiary custom-navbar fixed-top" >
       <div className="container-fluid">
 
         <button 
@@ -32,11 +33,11 @@ function NavBar() {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               {/* Home Link */}
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="*">Home</Link>
+                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
+                <Link className="nav-link active" aria-current="page" to="/">Login</Link>
               </li>
 
               {/* Additional Links */}
@@ -65,6 +66,8 @@ function NavBar() {
                   <li><Link className="dropdown-item" to="/course">Add Classes</Link></li>
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item" to="/api">API Testing</Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><Link className="dropdown-item" to="/register">Register</Link></li>
                 </ul>
               </li>
             </ul>
